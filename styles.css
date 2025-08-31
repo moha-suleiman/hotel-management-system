@@ -1,0 +1,292 @@
+/* Reset & global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: Arial, sans-serif;
+  background: #f8f9fa;
+  color: #333;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+/* HEADER BAR STYLES */
+.top-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.6); /* translucent */
+  backdrop-filter: blur(10px); /* frosted glass effect */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #004d40;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #00796b;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #004d40;
+}
+
+/* Make space at the top for fixed nav */
+body {
+  padding-top: 0px; /* adjust based on nav height */
+}
+  .nav-links a {
+    margin-left: 0;
+  }
+
+/* HERO / SLIDER CONTAINER */
+.hero {
+  position: relative;
+  height: 100vh; /* Full screen */
+  width: 100%;
+  overflow: hidden;
+}
+
+.swiper-slide img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  display: block;
+}
+
+/* HERO TEXT OVER IMAGE */
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  z-index: 10;
+  max-width: 90%;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+}
+
+/* SOCIAL SHARE SECTION */
+/* FOOTER STYLING */
+.site-footer {
+  background: #004d40;
+  color: white;
+  padding: 40px 20px 20px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.site-footer .footer-content {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.site-footer .social-share {
+  margin-bottom: 20px;
+}
+
+.site-footer .social-share p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.site-footer .social-share a {
+  color: #ffcc00;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 8px;
+}
+
+.site-footer .social-share a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.footer-note {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+
+  .availability-section {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px 5%;
+    gap: 40px;
+    background: #f9f9f9;
+    flex-wrap: wrap;
+
+  }
+
+  /* Left: Search */
+  .left-column {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+  }
+
+  .search-box,
+  .booking-popup {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  }
+
+  .search-box h2,
+  .booking-popup h3 {
+    text-align: center;
+    color: #004d40;
+    margin-bottom: 20px;
+  }
+
+  .search-box input,
+  .search-box button,
+  .booking-popup input,
+  .booking-popup button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+
+  .search-box button,
+  .booking-popup button {
+    background: #00796b;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .search-box button:hover,
+  .booking-popup button:hover {
+    background: #004d40;
+  }
+
+  .search-result {
+    background: #fffbe6;
+    border-left: 5px solid #ff9800;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 6px;
+  }
+
+  #bookNowBtn {
+  display: inline-block;
+  background: #ff9800;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  }
+
+  #bookNowBtn:hover {
+  background: #e65100;
+  }
+
+  /* Right: Guest House Features */
+  .right-column {
+    flex: 1;
+    min-width: 300px;
+    max-width: 800px;
+  }
+
+  .description-box {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  }
+
+  .description-box h2 {
+    color: #004d40;
+    margin-bottom: 20px;
+  }
+
+  .description-box ul {
+    list-style: none;
+    padding-left: 0;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .description-box li {
+    margin-bottom: 12px;
+  }
+
+  /* OUTER SECTION: Provides spacing */
+  .info-banner {
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* INNER CONTENT: Box with translucent color */
+  .info-content {
+    background: url('/home/mohack/codes/hotelmanagement/images/4.jpeg') center center / cover no-repeat;
+    backdrop-filter: blur(6px);
+    padding: 30px;
+    color: white;
+    border-radius: 10px;
+    max-width: 1000px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.8;
+    box-sizing: border-box;
+  }
+
+
+
+  /* Mobile responsive */
+  @media screen and (max-width: 768px) {
+    .availability-section {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .left-column,
+    .right-column {
+      max-width: 130%;
+    }
+  }
+

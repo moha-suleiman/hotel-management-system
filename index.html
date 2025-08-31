@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Urji Guest House - Minjila</title>
+
+  <!-- SEO & Social Meta -->
+  <meta name="description" content="Stay at Urji Guest House, Minjila. Your relaxing stopover between Mombasa, Garissa, and Lamu.">
+  <meta name="keywords" content="guest house, Minjila, Mombasa, Garissa, Lamu, accommodation, Urji">
+  <meta name="author" content="Urji Guest House">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Urji Guest House - Minjila Junction Stay">
+  <meta property="og:description" content="Beautiful guesthouse at the junction of Mombasa, Garissa, and Lamu. Book your stay now!">
+  <meta property="og:image" content="https://yourdomain.com/images/preview.jpg">
+  <meta property="og:url" content="https://yourdomain.com">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Urji Guest House - Book Now">
+  <meta name="twitter:description" content="Relax and recharge at Urji Guest House, Minjila Junction.">
+  <meta name="twitter:image" content="https://yourdomain.com/images/preview.jpg">
+
+  <!-- Favicon & CSS -->
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+<!-- TOP HEADER BAR -->
+<nav class="top-header">
+  <div class="header-container">
+    <div class="logo">Urji Guest House</div>
+    <div class="nav-links">
+      <a href="/admin">Admin</a>
+      <a href="tel:+254712345678">Receptionist: +254 728 791 170</a>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- HERO SECTION WITH IMAGE SLIDER -->
+  <section class="hero">
+    <!-- Swiper Slider -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="/home/mohack/codes/hotelmanagement/images/6.jpeg" alt="Room 1"></div>
+        <div class="swiper-slide"><img src="/home/mohack/codes/hotelmanagement/images/1.jpeg" alt="Room 2"></div>
+        <div class="swiper-slide"><img src="/home/mohack/codes/hotelmanagement/images/8.jpeg" alt="Room 3"></div>
+        <div class="swiper-slide"><img src="/home/mohack/codes/hotelmanagement/images/2.jpeg" alt="Room 4"></div>
+        <div class="swiper-slide"><img src="/home/mohack/codes/hotelmanagement/images/3.jpeg" alt="Room 5"></div>
+        <div class="swiper-slide"><img src="/home/mohack/codes/hotelmanagement/images/4.jpeg" alt="Room 6"></div>
+        <div class="swiper-slide"><img src="/home/mohack/codes/hotelmanagement/images/5.jpeg" alt="Room 7"></div>
+        <div class="swiper-slide"><img src="/home/mohack/codes/hotelmanagement/images/7.jpeg" alt="Room 8"></div>
+        <div class="swiper-slide"><img src="/home/mohack/codes/hotelmanagement/images/8.jpeg" alt="Room 9"></div>
+      </div>
+    </div>
+
+    <!-- Hero Text Overlay -->
+    <div class="hero-text">
+      <h1>Welcome to Urji Guest House</h1>
+      <p>Located at Minjila 🇰🇪 Junction — Mombasa • Garissa • Lamu.
+        Be the first to secure your stay! We also serve various delicious foods💥.</p>
+    </div>
+  </section>
+<section class="availability-section">
+  <!-- LEFT SIDE -->
+  <div class="left-column">
+    <div class="search-box">
+      <h2>Search for Available Room</h2>
+      <form id="searchForm">
+        <input type="date" id="checkin" name="checkin" required>
+        <input type="date" id="checkout" name="checkout" required>
+        <input type="number" id="adults" name="adults" placeholder="Number of Adults" required>
+        <button type="submit">Check Availability</button>
+      </form>
+
+      <div class="search-result" id="searchResult" style="display: none;">
+        <p id="availabilityMessage"></p>
+        <button id="bookNowBtn" style="display: none;">Book Now</button>
+      </div>
+
+      <div class="booking-popup" id="bookingForm" style="display: none;">
+        <h3>Confirm Booking</h3>
+        <form action="/book" method="POST">
+          <input type="text" name="name" placeholder="Full Name" required>
+          <input type="text" name="idnumber" placeholder="ID Number" required>
+          <button type="submit">Confirm Booking</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- RIGHT SIDE -->
+  <div class="right-column">
+    <div class="description-box">
+      <h2>Why Stay at Urji Guest House?</h2>
+      <ul>
+        <li>✅ Clean, spacious rooms with modern beds</li>
+        <li>✅ Air conditioning & hot water showers</li>
+        <li>✅ Delicious food — both local & international</li>
+        <li>✅ 24/7 security & safe parking</li>
+        <li>✅ Located at the Minjila Junction — Mombasa, Garissa, Lamu</li>
+        <li>✅ Friendly, multilingual staff</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!-- NOTICE / DESCRIPTION SECTION -->
+<section class="info-banner">
+  <div class="info-content">
+    <p>
+      Please inform Urji Guest House in advance of your expected arrival time. You can use the Special Requests box when booking, or contact the property directly with the contact details provided in your confirmation.
+    </p>
+    <p>
+      In response to Coronavirus (COVID-19), additional safety and sanitation measures are in effect at this property.
+    </p>
+    <p>
+      Due to Coronavirus (COVID-19), this property adheres to strict physical distancing measures.
+    </p>
+  </div>
+</section>
+
+
+
+
+<!-- FOOTER SECTION -->
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="social-share">
+      <p>Share with friends:</p>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https://yourdomain.com" target="_blank">Facebook</a> |
+      <a href="https://twitter.com/intent/tweet?url=https://yourdomain.com&text=Check%20out%20Urji%20Guest%20House!" target="_blank">Twitter</a> |
+      <a href="https://api.whatsapp.com/send?text=Check%20out%20Urji%20Guest%20House:%20https://yourdomain.com" target="_blank">WhatsApp</a>
+    </div>
+
+    <p class="footer-note">&copy; 2025 Urji Guest House. All rights reserved.</p>
+  </div>
+</footer>
+
+  <!-- JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      loop: true,
+      autoplay: {
+        delay: 4000,
+      },
+    });
+    document.getElementById("searchForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const checkin = document.getElementById("checkin").value;
+    const checkout = document.getElementById("checkout").value;
+    const adults = parseInt(document.getElementById("adults").value, 10);
+
+    const resultBox = document.getElementById("searchResult");
+    const message = document.getElementById("availabilityMessage");
+    const bookBtn = document.getElementById("bookNowBtn");
+
+    if (checkin && checkout && adults > 0) {
+      message.textContent = "✅ Room is available!";
+      bookBtn.style.display = "inline-block";
+    } else {
+      message.textContent = "❌ Invalid input or no rooms available.";
+      bookBtn.style.display = "none";
+    }
+
+    resultBox.style.display = "block";
+  });
+
+  document.getElementById("bookNowBtn").addEventListener("click", function() {
+    document.getElementById("bookingForm").style.display = "block";
+  });
+  window.addEventListener("scroll", function () {
+    const infoBlock = document.querySelector(".info-content");
+    const rect = infoBlock.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+
+    if (rect.top < windowHeight - 100) {
+      infoBlock.classList.add("visible");
+    }
+  });
+</script>
+
+
+</body>
+</html>
