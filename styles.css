@@ -263,7 +263,7 @@ body {
 
   /* INNER CONTENT: Box with translucent color */
   .info-content {
-    background: url('/4.jpeg') center center / cover no-repeat;
+    background: url('4.jpeg') center center / cover no-repeat;
     backdrop-filter: blur(6px);
     padding: 30px;
     color: white;
